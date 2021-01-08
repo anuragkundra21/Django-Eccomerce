@@ -25,7 +25,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = '_%922i8^^9m!7nv-!q-+5ryyhj=p=)7+sc-gzt$z28lv83!k9#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1","eccomwebsite.herokuapp.com"]
 
@@ -79,15 +79,10 @@ WSGI_APPLICATION = 'mfw.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dc8r89vmd2e2jr',
-        'USER': 'seqwrfuhdajift',
-        'PASSWORD': 'a59ca0eaa74961a6d41ce44cd18e688486f677e285c619750f0df3681267bf98',
-        'HOST': 'ec2-18-235-107-171.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 
 # Password validation
