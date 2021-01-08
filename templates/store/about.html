@@ -1,0 +1,26 @@
+{% extends 'store/basic.html' %}
+{% block title %} This is about Page {% endblock %}
+{% block body %}
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1>ABOUT US</h1>
+    <p class="lead">Welcome to my Ecommerce Website<br> Thank You so much for visiting.</p>
+  </div>
+<style media="screen">
+  .container{
+    margin-top: 220px;
+    text-align: center;
+  }
+</style>
+</main><!-- /.container -->
+
+  {% endblock %}
+  {% block js %}
+  {% load static %}
+  <script src="{% static 'store/1.js' %}">
+
+  </script>
+
+
+  {% endblock %}
