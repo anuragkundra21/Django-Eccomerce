@@ -79,10 +79,15 @@ WSGI_APPLICATION = 'mfw.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dc8r89vmd2e2jr',
+        'USER': 'seqwrfuhdajift',
+        'PASSWORD': 'a59ca0eaa74961a6d41ce44cd18e688486f677e285c619750f0df3681267bf98',
+        'HOST': 'ec2-18-235-107-171.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
