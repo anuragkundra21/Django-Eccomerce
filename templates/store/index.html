@@ -2,7 +2,7 @@
 {% block css %}
       <style>
           body{
-            
+
           }
           .col-md-3
           {
@@ -118,7 +118,9 @@
   console.log(cart);
   });
 
-  $('#popcart').popover();
+  $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
   updatepopover(cart)
 
   function updatepopover(cart) {
@@ -160,7 +162,7 @@
       localStorage.setItem('cart', JSON.stringify(cart));
       document.getElementById('cart').innerHTML = sum;
       console.log(cart);
-      updatepopover(cart )
+      updatepopover(cart);
   }
   // If plus or minus button is clicked, change the cart as well as the display value
   $('.divpr').on("click", "button.minus", function() {
