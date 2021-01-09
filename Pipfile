@@ -9,6 +9,7 @@ verify_ssl = true
 appdirs = "==1.4.4"
 gunicorn = "*"
 django = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
